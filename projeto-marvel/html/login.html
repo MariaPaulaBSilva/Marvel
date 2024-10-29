@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="projeto-marvel">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Marvel</title>
+    <link rel="stylesheet" href="../css/login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="../js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body ng-app="projeto-marvel" ng-controller="LoginController">
+    <div class="card-login">
+        <h1>Login</h1>
+        <form ng-submit="login()" class="forms-login">
+            <div class="input-container">
+                <span class="icon">✉️</span>
+                <input type="text" placeholder="Digite seu email" ng-model="user.email" required>
+            </div>
+            <div class="input-container">
+                <span class="icon">🔒</span>
+                <input type="password" placeholder="Digite sua senha" ng-model="user.password" required>
+            </div>
+            <button type="submit" class="button button-entrar">Entrar</button>
+            <p ng-if="errorMessage">{{ errorMessage }}</p>
+        </form>
+    </div>
+</body>
+</html>
