@@ -1,0 +1,32 @@
+.card-personagem {
+
+    border-radius: 20px; 
+    padding: 20px;
+    width: 300px; 
+    height: auto; 
+    /* background-color: linear-gradient(90deg, #FFFFFF 0%, #F4F4F4 32%, #999999 100%); */
+    margin-bottom: 20px; 
+    background-color: #c62828; 
+  }
+  
+  .imagem-personagem {
+    width: 200px; 
+    height: auto; 
+  }
+  
+  .nome-personagem {
+    color: white; 
+    margin-top: 10px; 
+  }
+  
+  .outros-personagens {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .circle-personagem img {
+    width: 50px; 
+    height: auto; 
+    border-radius: 5px; 
+  }

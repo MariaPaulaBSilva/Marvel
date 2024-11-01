@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="projeto-marvel">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens | Marvel</title>
+    <link rel="stylesheet" href="../css/personagens.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="../js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body  ng-app="projeto-marvel" ng-controller="PersonagensController">
+    <div class="container">
+      
+        <app-carrossel></app-carrossel>
+        
+        <h2>Outros Personagens</h2>
+        <div class="outros-personagens">
+            <div ng-repeat="p in outrosPersonagens" class="circle-personagem">
+                <img ng-src="{{p.imagem}}" alt="{{p.nome}}">
+            </div>
+        </div>
+    </div>
+
+
+</body>

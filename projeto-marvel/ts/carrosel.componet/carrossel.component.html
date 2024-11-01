@@ -1,0 +1,10 @@
+<div class="carrossel">
+    <button (click)="prev()">⟨</button>
+    <div class="cards">
+      <app-personagem-card
+        [nome]="personagens[currentIndex].nome"
+        [imagem]="personagens[currentIndex].imagem">
+      </app-personagem-card>
+    </div>
+    <button (click)="next()">⟩</button>
+  </div>

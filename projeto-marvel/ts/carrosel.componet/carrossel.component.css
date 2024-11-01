@@ -1,0 +1,17 @@
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cards {
+    display: flex;
+    overflow: hidden;
+    width: 80%; 
+    background-color: #bf0606;
+  }
+  
+  .cards app-personagem-card {
+    flex: 0 0 25%; 
+    transition: transform 0.5s; 
+  }
